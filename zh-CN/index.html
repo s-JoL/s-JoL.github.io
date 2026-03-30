@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Understudy — One instruction. Your entire computer.</title>
+    <title>Understudy — 一句话，操作你的整台电脑</title>
     <meta
       name="description"
-      content="Understudy is an open-source local AI agent that operates your computer. Give it a task, teach it once, and watch it grow. Bring your own model."
+      content="Understudy 是一个开源的本地 AI Agent，能操作你的电脑完成各种任务。给它一个指令，教它一次，它会越用越好。自带模型，开源免费。"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,8 +37,8 @@
         --radius-sm: 10px;
         --radius-xs: 6px;
         --content: 1120px;
-        --font: "DM Sans", system-ui, -apple-system, sans-serif;
-        --font-serif: "Instrument Serif", Georgia, serif;
+        --font: "DM Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+        --font-serif: "Instrument Serif", "Songti SC", Georgia, serif;
       }
 
       * {
@@ -210,11 +210,11 @@
 
       .hero h1 {
         font-family: var(--font-serif);
-        font-size: clamp(3.2rem, 7vw, 5.4rem);
-        line-height: 1.0;
-        letter-spacing: -0.03em;
+        font-size: clamp(3rem, 7vw, 5rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
         font-weight: 400;
-        max-width: 14ch;
+        max-width: 16ch;
         margin-bottom: 24px;
       }
 
@@ -224,10 +224,10 @@
       }
 
       .hero-sub {
-        font-size: 1.15rem;
-        line-height: 1.75;
+        font-size: 1.12rem;
+        line-height: 1.85;
         color: var(--text-secondary);
-        max-width: 56ch;
+        max-width: 48ch;
         margin-bottom: 36px;
       }
 
@@ -325,7 +325,7 @@
       .section-header h2 {
         font-family: var(--font-serif);
         font-size: clamp(2rem, 4vw, 3rem);
-        line-height: 1.1;
+        line-height: 1.15;
         letter-spacing: -0.02em;
         font-weight: 400;
         margin-bottom: 16px;
@@ -334,8 +334,8 @@
       .section-header p {
         font-size: 1.08rem;
         color: var(--text-secondary);
-        max-width: 52ch;
-        line-height: 1.7;
+        max-width: 48ch;
+        line-height: 1.8;
       }
 
       /* --- Scenario Cards --- */
@@ -392,7 +392,7 @@
       .scenario:nth-child(3) .scenario-icon { background: rgba(245, 158, 11, 0.08); }
 
       .scenario h3 {
-        font-size: 1.18rem;
+        font-size: 1.15rem;
         font-weight: 600;
         margin-bottom: 10px;
         letter-spacing: -0.01em;
@@ -400,7 +400,7 @@
 
       .scenario p {
         color: var(--text-secondary);
-        line-height: 1.7;
+        line-height: 1.8;
         font-size: 0.95rem;
       }
 
@@ -467,9 +467,9 @@
 
       .demo-content p {
         color: var(--text-secondary);
-        line-height: 1.8;
+        line-height: 1.85;
         font-size: 1.02rem;
-        max-width: 60ch;
+        max-width: 56ch;
         margin-bottom: 14px;
       }
 
@@ -565,7 +565,7 @@
         border-top: 1px solid var(--border);
         font-size: 0.86rem;
         color: var(--text-tertiary);
-        line-height: 1.6;
+        line-height: 1.7;
       }
 
       .showcase-note a {
@@ -597,7 +597,7 @@
       .growth-section h2 {
         font-family: var(--font-serif);
         font-size: clamp(2rem, 4vw, 3rem);
-        line-height: 1.1;
+        line-height: 1.15;
         letter-spacing: -0.02em;
         font-weight: 400;
         margin-bottom: 16px;
@@ -608,8 +608,8 @@
       .growth-section > p {
         color: rgba(255, 255, 255, 0.55);
         font-size: 1.05rem;
-        line-height: 1.7;
-        max-width: 50ch;
+        line-height: 1.8;
+        max-width: 46ch;
         margin-bottom: 48px;
         position: relative;
       }
@@ -719,7 +719,7 @@
       .feature p {
         color: var(--text-secondary);
         font-size: 0.9rem;
-        line-height: 1.65;
+        line-height: 1.7;
       }
 
       /* --- Get Started --- */
@@ -746,7 +746,7 @@
       .start-card p {
         color: var(--text-secondary);
         font-size: 0.93rem;
-        line-height: 1.65;
+        line-height: 1.7;
         margin-bottom: 20px;
       }
 
@@ -772,13 +772,13 @@
       /* --- Roadmap --- */
       .roadmap {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 12px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
         margin-top: 6px;
       }
 
       .roadmap-item {
-        padding: 16px 14px;
+        padding: 20px 20px;
         border-radius: var(--radius-sm);
         border: 1px solid var(--border);
         background: var(--bg-card);
@@ -819,7 +819,7 @@
       .roadmap-item span {
         font-size: 0.8rem;
         color: var(--text-secondary);
-        line-height: 1.5;
+        line-height: 1.55;
       }
 
       /* --- Models --- */
@@ -991,16 +991,16 @@
       <div class="topbar-inner">
         <a class="brand" href="#top">
           <div class="brand-mark">
-            <img src="assets/icon128.png" alt="Understudy">
+            <img src="../assets/icon128.png" alt="Understudy">
           </div>
           <div class="brand-name">Understudy</div>
         </a>
         <nav class="nav" aria-label="Primary">
-          <a href="#features">Features</a>
-          <a href="#showcase">Showcase</a>
-          <a href="#roadmap">Roadmap</a>
-          <a href="#start">Get Started</a>
-          <a class="nav-lang" href="./zh-CN/index.html">中文</a>
+          <a href="#features">产品能力</a>
+          <a href="#showcase">演示</a>
+          <a href="#roadmap">路线图</a>
+          <a href="#start">开始使用</a>
+          <a class="nav-lang" href="../index.html">EN</a>
         </nav>
       </div>
     </header>
@@ -1010,286 +1010,286 @@
       <!-- 1. Hero -->
       <section class="hero">
         <div class="wrap hero-inner">
-          <div class="eyebrow reveal">Open Source · Bring Your Own Model</div>
-          <h1 class="reveal reveal-delay-1">One instruction. Your <em>entire</em> computer.</h1>
+          <div class="eyebrow reveal">开源免费 · 自带模型和 API Key</div>
+          <h1 class="reveal reveal-delay-1">一句话，操作你的<em>整台电脑</em></h1>
           <p class="hero-sub reveal reveal-delay-2">
-            Understudy is an open-source AI agent that lives on your computer. Give it a task and it researches, browses the web, clicks through desktop apps, manages files, and replies through your existing channels. Teach it once and it learns. Use it daily and it gets faster.
+            Understudy 是一个开源的本地 AI Agent。给它一个指令，它就能帮你查资料、浏览网页、操作桌面应用、管理文件，还能通过你常用的聊天工具回复你。教它一次，它就学会。用得越多，它就越快。
           </p>
           <div class="hero-actions reveal reveal-delay-2">
             <a class="btn btn-primary" href="https://github.com/understudy-ai/understudy" target="_blank" rel="noreferrer">
-              Get Started
+              开始使用
             </a>
             <a class="btn btn-secondary" href="#showcase">
-              Watch Demo
+              观看演示
             </a>
           </div>
           <div class="hero-pills reveal reveal-delay-3">
             <div class="pill">
               <div class="pill-icon operate">&#9654;</div>
               <div class="pill-text">
-                <strong>Operate any app</strong>
-                <span>Browse, click, type across your desktop</span>
+                <strong>操作任意应用</strong>
+                <span>浏览、点击、输入，像你一样使用电脑</span>
               </div>
             </div>
             <div class="pill">
               <div class="pill-icon learn">&#10003;</div>
               <div class="pill-text">
-                <strong>Learn from you</strong>
-                <span>Show it once, it remembers forever</span>
+                <strong>跟你学</strong>
+                <span>演示一次，它就记住了</span>
               </div>
             </div>
             <div class="pill">
               <div class="pill-icon grow">&#8679;</div>
               <div class="pill-text">
-                <strong>Grow over time</strong>
-                <span>Gets faster the more you use it</span>
+                <strong>越用越好</strong>
+                <span>自动找到更快的方式完成任务</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- 2. Showcase -->
+      <!-- 2. 演示 -->
       <section id="showcase">
         <div class="wrap">
           <div class="section-header reveal">
-            <h2>See it in action.</h2>
-            <p>Four demos, each showing a different side of what Understudy can do.</p>
+            <h2>看看它能做什么</h2>
+            <p>四个演示，展示 Understudy 的不同面向。</p>
           </div>
           <div class="showcase-panel reveal">
             <div class="showcase-tabs" role="tablist">
-              <button class="showcase-tab is-active" data-demo="general" role="tab">General Agent</button>
-              <button class="showcase-tab" data-demo="remote" role="tab">Remote Dispatch</button>
-              <button class="showcase-tab" data-demo="teach" role="tab">Teach &amp; Replay</button>
-              <button class="showcase-tab" data-demo="playbook" role="tab">AI App Critic</button>
+              <button class="showcase-tab is-active" data-demo="general" role="tab">通用 Agent</button>
+              <button class="showcase-tab" data-demo="remote" role="tab">远程调度</button>
+              <button class="showcase-tab" data-demo="teach" role="tab">演示教学</button>
+              <button class="showcase-tab" data-demo="playbook" role="tab">AI 测评博主</button>
             </div>
 
-            <!-- Demo 1: General Agent -->
+            <!-- Demo 1: 通用 Agent -->
             <div class="showcase-demo is-active" data-demo="general">
               <div class="demo-content">
-                <h3>One message, multi-tool execution</h3>
-                <p>The agent researches the web, controls your browser, invokes skills, and delivers a polished result — all from a single instruction. No staging, no multi-step prompting. One local runtime handles everything.</p>
-                <div class="demo-example">Example: "Research Cowork and build a tech-style landing page in my downloads folder"</div>
+                <h3>一句话触发多工具协作</h3>
+                <p>Agent 在一个本地运行时里完成网络调研、浏览器操控、技能调用，最终交付完整结果。不用分步骤操作，不用来回切换工具。说一句话就行。</p>
+                <div class="demo-example">示例："帮我调研 Cowork 并在 downloads 文件夹生成一个科技风落地页"</div>
               </div>
               <div class="demo-video">
-                <iframe src="https://www.youtube.com/embed/KObeVm7MK1Y" title="Demo: General Agent" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/KObeVm7MK1Y" title="演示：通用 Agent" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
 
-            <!-- Demo 2: Remote Dispatch -->
+            <!-- Demo 2: 远程调度 -->
             <div class="showcase-demo" data-demo="remote">
               <div class="demo-content">
-                <h3>Phone message in, desktop result out</h3>
-                <p>Send a message from your phone via Telegram. Understudy receives it on your Mac, converts a file to PDF, opens desktop Telegram, finds the right contact, and sends it — all through GUI automation. Phone view and desktop view shown side by side.</p>
-                <div class="demo-example">Example: "Convert the Cowork webpage to PDF and send it to Alex on Telegram"</div>
+                <h3>手机发消息，桌面出结果</h3>
+                <p>在手机上通过 Telegram 发一条消息，Understudy 在你的 Mac 上将网页转换为 PDF，打开桌面版 Telegram，找到联系人并发送——全程 GUI 自动化。手机画面和电脑画面并排呈现。</p>
+                <div class="demo-example">示例："把 Cowork 网页转成 PDF 发给 Telegram 里的 Alex"</div>
               </div>
               <div class="demo-video">
-                <iframe src="https://www.youtube.com/embed/HlTD6Jvm3gk" title="Demo: Remote Dispatch" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/HlTD6Jvm3gk" title="演示：远程调度" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
 
-            <!-- Demo 3: Teach -->
+            <!-- Demo 3: 演示教学 -->
             <div class="showcase-demo" data-demo="teach">
               <div class="demo-content">
-                <h3>Show once, refine, replay with generalization</h3>
-                <p>Demonstrate a workflow once — Understudy watches, understands the <strong>intent</strong>, and publishes a reusable skill. Interactively refine the generated skill, then invoke it with natural language. On replay, the agent automatically generalizes: Google Image search becomes browser automation, downloads become shell commands, while Pixelmator Pro stays GUI-controlled.</p>
-                <div class="demo-example">Example: "Find a photo of [person], remove the background, and send it to [contact] on Telegram"</div>
+                <h3>演示一次，精调后泛化重放</h3>
+                <p>演示一个任务——Understudy 看着你做，理解你的<strong>意图</strong>，然后发布一个可复用的技能。交互式精调生成的技能，再用自然语言调用。重放时 Agent 自动泛化：Google 图片搜索变成浏览器自动化，下载变成 shell 命令，Pixelmator Pro 仍用 GUI 操控。</p>
+                <div class="demo-example">示例："找一张 [某人] 的照片，去除背景，用 Telegram 发送给 [某人]"</div>
               </div>
               <div class="demo-video">
-                <iframe src="https://www.youtube.com/embed/ZOZU6vb4rRs" title="Demo: Teach &amp; Replay" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/ZOZU6vb4rRs" title="演示：演示教学" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <div class="demo-full-recording"><a href="https://drive.google.com/file/d/1vTMpYaCOIO8IVmciI1DpvEBC6x5MaJ4f/view?usp=sharing" target="_blank" rel="noopener">Full unedited recording &rarr;</a></div>
+              <div class="demo-full-recording"><a href="https://drive.google.com/file/d/1vTMpYaCOIO8IVmciI1DpvEBC6x5MaJ4f/view?usp=sharing" target="_blank" rel="noopener">完整未剪辑录屏 &rarr;</a></div>
             </div>
 
-            <!-- Demo 4: AI App Critic -->
+            <!-- Demo 4: AI 测评博主 -->
             <div class="showcase-demo" data-demo="playbook">
               <div class="demo-content">
-                <h3>One prompt. Real iPhone. Published on YouTube.</h3>
-                <p>A six-stage pipeline browses the real App Store, installs an app via <strong>iPhone Mirroring</strong>, explores it autonomously — discovering features it's never seen — composes a narrated review video locally, uploads it to YouTube, and cleans up the device. The middle stage is genuinely agentic: 51 quality-gate rules guide the agent, but it navigates an unfamiliar app freely and makes its own editorial decisions. About one hour, zero human intervention.</p>
-                <div class="demo-example">Example: "Make a Snapseed iPhone app review video from scratch — capture proof-first clips, add narration and subtitles, upload to YouTube, and clean up"</div>
+                <h3>一条 Prompt，真机 iPhone，发布到 YouTube</h3>
+                <p>六阶段 Pipeline：在 Chrome 浏览真实 App Store，通过 <strong>iPhone Mirroring</strong> 在真机上安装应用，自主探索从未见过的功能，在本地合成带旁白和字幕的评测视频，上传 YouTube，清理设备。中间阶段是真正的 Agentic：51 条质量门控规则引导 Agent，但它在陌生应用中自由导航，自主做出编辑判断。约一小时，零人工干预。</p>
+                <div class="demo-example">示例："从零制作一个 Snapseed 评测视频——重点拍背景移除和黑白滤镜，加旁白字幕，上传 YouTube，清理设备"</div>
               </div>
               <div class="demo-video-pair">
                 <div class="demo-video">
-                  <div class="demo-video-label">The published review</div>
-                  <iframe src="https://www.youtube.com/embed/jliTvpTnsKY" title="Demo: AI App Critic — Result" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="demo-video-label">发布的评测视频</div>
+                  <iframe src="https://www.youtube.com/embed/jliTvpTnsKY" title="演示：AI 测评博主——成品" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="demo-video">
-                  <div class="demo-video-label">How it was made</div>
-                  <iframe src="https://www.youtube.com/embed/gYMYI0bxkJs" title="Demo: AI App Critic — Process" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="demo-video-label">制作过程</div>
+                  <iframe src="https://www.youtube.com/embed/gYMYI0bxkJs" title="演示：AI 测评博主——过程" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="demo-full-recording"><a href="https://drive.google.com/file/d/1Ap5hGWWemU04UkRm495waHjB1-3nq3g5/view?usp=sharing" target="_blank" rel="noopener">Full unedited recording &rarr;</a></div>
+              <div class="demo-full-recording"><a href="https://drive.google.com/file/d/1Ap5hGWWemU04UkRm495waHjB1-3nq3g5/view?usp=sharing" target="_blank" rel="noopener">完整未剪辑录屏 &rarr;</a></div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- 3. It operates your computer -->
+      <!-- 3. 它像你一样操作电脑 -->
       <section id="features">
         <div class="wrap">
           <div class="section-header reveal">
-            <h2>It operates your computer like you do.</h2>
-            <p>One local agent that can see your screen, open apps, browse the web, run commands, and send messages — all from a single instruction.</p>
+            <h2>它像你一样操作电脑</h2>
+            <p>一个本地 Agent，能看屏幕、开应用、浏览网页、跑命令、发消息——全部在一条指令里完成。</p>
           </div>
           <div class="scenarios">
             <article class="scenario reveal reveal-delay-1">
               <div class="scenario-icon">&#128187;</div>
-              <h3>Desktop Agent</h3>
-              <p>One message and it researches, creates files, opens apps, and delivers the result. No staging, no multi-step prompting. Just say what you need.</p>
+              <h3>桌面 Agent</h3>
+              <p>发一条消息，它就能查资料、生成文件、打开应用、交付结果。不用分步骤操作，不用来回切换工具。说一句话就行。</p>
             </article>
             <article class="scenario reveal reveal-delay-2">
               <div class="scenario-icon">&#128241;</div>
-              <h3>Remote Control</h3>
-              <p>Send a message from your phone via Telegram, Slack, or any of 8 channels. Understudy works on your Mac and sends back the result while you're away.</p>
+              <h3>远程操控</h3>
+              <p>在手机上通过 Telegram、Slack 等发一条消息，Understudy 就在你的 Mac 上工作，做完再把结果发回来。人不在电脑前也没关系。</p>
             </article>
             <article class="scenario reveal reveal-delay-3">
               <div class="scenario-icon">&#128172;</div>
-              <h3>8 Channels Built In</h3>
-              <p>Telegram, Slack, Discord, WhatsApp, Signal, LINE, iMessage, and Web. Control your agent through the messaging apps you already use.</p>
+              <h3>8 个消息渠道</h3>
+              <p>Telegram、Slack、Discord、WhatsApp、Signal、LINE、iMessage、Web。用你已经在用的聊天工具来操控 Agent。</p>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- 4. It keeps getting better -->
+      <!-- 4. 越用越好 -->
       <section>
         <div class="wrap">
           <div class="growth-section reveal">
-            <h2>It keeps getting better.</h2>
-            <p>Like a new colleague who grows into the role — Understudy starts by following instructions, then gradually learns your routines and finds better ways to get things done.</p>
+            <h2>它会越用越好</h2>
+            <p>就像一个新同事慢慢成长——Understudy 从听指令开始，逐渐学会你的习惯，找到更好的做事方式。</p>
             <div class="timeline">
               <div class="timeline-step">
-                <div class="timeline-when">Day 1</div>
+                <div class="timeline-when">第 1 天</div>
                 <div class="timeline-dot"></div>
                 <div>
-                  <div class="timeline-label">Operates</div>
-                  <div class="timeline-desc">Does what you say</div>
+                  <div class="timeline-label">执行</div>
+                  <div class="timeline-desc">你说什么它做什么</div>
                 </div>
               </div>
               <div class="timeline-step">
-                <div class="timeline-when">Week 1</div>
+                <div class="timeline-when">第 1 周</div>
                 <div class="timeline-dot"></div>
                 <div>
-                  <div class="timeline-label">Learns</div>
-                  <div class="timeline-desc">Watches and remembers</div>
+                  <div class="timeline-label">学习</div>
+                  <div class="timeline-desc">看着你做，记住流程</div>
                 </div>
               </div>
               <div class="timeline-step">
-                <div class="timeline-when">Month 1</div>
+                <div class="timeline-when">第 1 个月</div>
                 <div class="timeline-dot"></div>
                 <div>
-                  <div class="timeline-label">Remembers</div>
-                  <div class="timeline-desc">Does it independently</div>
+                  <div class="timeline-label">记住</div>
+                  <div class="timeline-desc">独立完成日常任务</div>
                 </div>
               </div>
               <div class="timeline-step">
-                <div class="timeline-when">Month 3</div>
+                <div class="timeline-when">第 3 个月</div>
                 <div class="timeline-dot"></div>
                 <div>
-                  <div class="timeline-label">Optimizes</div>
-                  <div class="timeline-desc">Finds faster ways</div>
+                  <div class="timeline-label">优化</div>
+                  <div class="timeline-desc">自己找到更快的路</div>
                 </div>
               </div>
               <div class="timeline-step">
-                <div class="timeline-when">Month 6</div>
+                <div class="timeline-when">第 6 个月</div>
                 <div class="timeline-dot"></div>
                 <div>
-                  <div class="timeline-label">Anticipates</div>
-                  <div class="timeline-desc">Acts before you ask</div>
+                  <div class="timeline-label">预判</div>
+                  <div class="timeline-desc">你还没开口它就做了</div>
                 </div>
               </div>
             </div>
             <div class="growth-quote">
-              "In theater, an understudy watches the lead, learns the role, and steps in when needed."
+              "在剧场里，替角先观察主角，学会角色，然后在需要时登台。"
             </div>
           </div>
         </div>
       </section>
 
-      <!-- 5. Open source -->
+      <!-- 5. 开源，用你自己的模型 -->
       <section>
         <div class="wrap">
           <div class="section-header reveal">
-            <h2>Open source. Bring your own model.</h2>
-            <p>No subscriptions, no lock-in. Run it locally with full control over your data and your choice of AI provider.</p>
+            <h2>开源免费，用你自己的模型</h2>
+            <p>不用订阅，不被绑定。在本地运行，数据完全可控，模型自己选。</p>
           </div>
           <div class="features">
             <div class="feature reveal reveal-delay-1">
               <div class="feature-icon">&#128275;</div>
-              <h3>Open Source</h3>
-              <p>MIT license. Full source code on GitHub. Inspect, modify, and contribute freely.</p>
+              <h3>完全开源</h3>
+              <p>MIT 协议，源码全部在 GitHub。可以自由查看、修改和贡献。</p>
             </div>
             <div class="feature reveal reveal-delay-1">
               <div class="feature-icon">&#129520;</div>
-              <h3>Bring Your Own Model</h3>
-              <p>Anthropic, OpenAI, Google, MiniMax, and more. Use your own API key — no bundled subscription required.</p>
+              <h3>自带模型</h3>
+              <p>支持 Anthropic、OpenAI、Google、MiniMax 等。用你自己的 API Key，不需要额外订阅。</p>
             </div>
             <div class="feature reveal reveal-delay-2">
               <div class="feature-icon">&#128274;</div>
-              <h3>Local-first</h3>
-              <p>Runs on your machine. Screenshots, recordings, and task data stay on your computer by default.</p>
+              <h3>本地优先</h3>
+              <p>在你自己的电脑上运行。截图、录像、任务数据默认都存在本地。</p>
             </div>
             <div class="feature reveal reveal-delay-2">
               <div class="feature-icon">&#128187;</div>
-              <h3>macOS Today</h3>
-              <p>Full native GUI automation on macOS. Linux and Windows desktop support are planned — contributions welcome.</p>
+              <h3>macOS 优先</h3>
+              <p>目前在 macOS 上支持完整的原生 GUI 自动化。Linux 和 Windows 支持计划中，欢迎贡献。</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- 6. Get Started -->
+      <!-- 6. 开始使用 -->
       <section id="start">
         <div class="wrap">
           <div class="section-header reveal">
-            <h2>Get started in minutes.</h2>
+            <h2>几分钟就能上手</h2>
           </div>
           <div class="start-grid">
             <div class="start-card reveal">
-              <h3>Quick Start</h3>
-              <p>Install from npm and let the wizard walk you through setup.</p>
+              <h3>快速开始</h3>
+              <p>通过 npm 安装，向导会带你完成配置。</p>
               <div class="terminal">
-                <span class="comment"># Install</span><br>
+                <span class="comment"># 安装</span><br>
                 <span class="cmd">npm install -g @understudy-ai/understudy</span><br>
                 <span class="cmd">understudy wizard</span><br>
                 <br>
-                <span class="comment"># Start</span><br>
+                <span class="comment"># 启动</span><br>
                 <span class="cmd">understudy daemon --start</span><br>
                 <span class="cmd">understudy chat</span>
               </div>
             </div>
             <div class="start-card reveal" id="roadmap">
-              <h3>Roadmap</h3>
-              <p>Five layers of capability, built progressively. No shortcuts.</p>
+              <h3>发展路线</h3>
+              <p>五层能力，循序渐进。每一层都建立在前一层之上。</p>
               <div class="roadmap">
                 <div class="roadmap-item">
-                  <div class="roadmap-badge badge-live">Implemented</div>
-                  <strong>Operate Software</strong>
-                  <span>See, click, type across any macOS app</span>
+                  <div class="roadmap-badge badge-live">已实现</div>
+                  <strong>操作软件</strong>
+                  <span>看、点、输入，操作 macOS 应用</span>
                 </div>
                 <div class="roadmap-item">
-                  <div class="roadmap-badge badge-live">Implemented</div>
-                  <strong>Learn from Demos</strong>
-                  <span>Teach by demonstration, publish skills</span>
+                  <div class="roadmap-badge badge-live">已实现</div>
+                  <strong>演示学习</strong>
+                  <span>演示教学，发布可复用技能</span>
                 </div>
                 <div class="roadmap-item">
-                  <div class="roadmap-badge badge-wip">In Progress</div>
-                  <strong>Remember</strong>
-                  <span>Lock in successful paths automatically</span>
+                  <div class="roadmap-badge badge-wip">开发中</div>
+                  <strong>记住</strong>
+                  <span>自动把成功路径固化下来</span>
                 </div>
                 <div class="roadmap-item">
-                  <div class="roadmap-badge badge-wip">In Progress</div>
-                  <strong>Get Faster</strong>
-                  <span>Discover and promote quicker routes</span>
+                  <div class="roadmap-badge badge-wip">开发中</div>
+                  <strong>加速</strong>
+                  <span>发现并升级到更快的执行方式</span>
                 </div>
                 <div class="roadmap-item">
-                  <div class="roadmap-badge badge-vision">Vision</div>
-                  <strong>Anticipate</strong>
-                  <span>Act proactively without disrupting you</span>
+                  <div class="roadmap-badge badge-vision">远景</div>
+                  <strong>预判</strong>
+                  <span>在不打扰你的前提下主动行动</span>
                 </div>
               </div>
               <div class="models-bar">
-                <strong>Supported models:</strong> Anthropic (Claude), OpenAI (GPT / Codex), Google (Gemini), MiniMax, and more via configurable providers.
+                <strong>支持的模型：</strong>Anthropic (Claude)、OpenAI (GPT / Codex)、Google (Gemini)、MiniMax 等，通过可配置的 provider 接入更多模型。
               </div>
             </div>
           </div>
@@ -1302,14 +1302,14 @@
     <footer class="footer">
       <div class="wrap footer-inner">
         <div class="footer-left">
-          Understudy &middot; <span>An understudy watches. Then performs.</span>
+          Understudy &middot; <span>替角先观察，然后登台。</span>
         </div>
         <div class="footer-links">
-          <a href="./zh-CN/index.html">中文</a>
+          <a href="../index.html">English</a>
           <a href="https://github.com/understudy-ai/understudy" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://discord.gg/eyR2dS3f" target="_blank" rel="noreferrer">Discord</a>
-          <a href="https://github.com/understudy-ai/understudy/blob/main/README.md" target="_blank" rel="noreferrer">README</a>
-          <a href="https://github.com/understudy-ai/understudy/blob/main/docs/Product_Design.md" target="_blank" rel="noreferrer">Product Design</a>
+          <a href="https://github.com/understudy-ai/understudy/blob/main/README.zh-CN.md" target="_blank" rel="noreferrer">README</a>
+          <a href="https://github.com/understudy-ai/understudy/blob/main/docs/Product_Design.zh-CN.md" target="_blank" rel="noreferrer">产品设计</a>
         </div>
       </div>
     </footer>
